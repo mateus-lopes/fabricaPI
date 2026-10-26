@@ -1,2 +1,7 @@
-.streamlit/
-./__pypackages__/
+node_modules
+dist
+.wrangler
+.dev.vars
+*.local
+# Nunca versionar exportações reais do SISTEC/SIGAA (dados pessoais).
+dados-reais/

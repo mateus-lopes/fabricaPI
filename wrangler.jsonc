@@ -1,0 +1,13 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "censo-ifc",
+  "compatibility_date": "2026-10-01",
+  // Só arquivos estáticos: não existe servidor. Os CSVs são lidos e processados
+  // no navegador de quem usa, então dados pessoais nunca chegam à Cloudflare.
+  "assets": {
+    "directory": "./dist",
+    "not_found_handling": "single-page-application"
+  },
+  "workers_dev": true,
+  "preview_urls": false
+}
